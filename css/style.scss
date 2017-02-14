@@ -1,0 +1,144 @@
+/*
+Theme Name: Fullstack
+Theme URI: http://facebook.com/phuoccn
+Author: Hufer
+Author URI: http://facebook.com/phuoccn
+Description: My name is Luong Huu Phuoc
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: blog, two-columns, left-sidebar, accessibility-ready, custom-background, custom-colors, custom-header, custom-logo, custom-menu, editor-style, featured-images, microformats, post-formats, rtl-language-support, sticky-post, threaded-comments, translation-ready
+Text Domain: hufer
+*/
+
+$c1:#266526;
+@mixin chuto($fz:20px,$fw:bold) {
+  font-size:$fz;
+  font-weight:$fw;
+}
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit;
+  padding: 0;
+  margin: 0;
+  /*-webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;*/ }
+
+html {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 1.2;
+  background: #ffffff; }
+
+body.modal-open {
+  overflow-y: scroll;
+  width: 100%;
+  padding-right: 0px !important; }
+
+.modal {
+  padding-right: 0px !important; }
+
+ul, ol {
+  list-style-position: inside;
+  list-style: none;
+  margin-bottom: 0px !important; }
+
+table {
+  border-collapse: collapse; }
+
+table, table tr, table td {
+  border: 1px solid #ccc; }
+
+.wrapper {
+  position: relative; }
+@keyframes header {
+  0% {
+    width: 200px; }
+  50% {
+    width: 300px; }
+  100% {
+    width: 100px; } }
+.header {
+  height: 200px;
+  background: gray;
+  animation: header 1s ease-out 2s infinite alternate; }
+
+img {
+  max-width: 100%; }
+a {
+    &:hover, &:link, &:active, &:visited {
+        color: #900; 
+    } 
+}
+.wrap {
+  display: flex;
+  width: 560px;
+  margin: auto;
+  margin-top: 30px; }
+
+.row1 {
+  display: flex;
+  flex: 1;
+  flex-direction: column; }
+
+.row2 {
+  display: flex;
+  flex: 1;
+  color: white;
+  background: $c1;
+  text-align: center;
+  }
+
+.vuong:before {
+  content: "";
+  display: block;
+  padding-top: 100%; }
+
+.vuong {
+  display: flex;
+  padding: 20px;
+  color: white;
+  @include chuto; }
+
+.vuong-in {
+  margin: auto;
+  text-align:center; }
+
+.vuong.v1 {
+  background: #e04242; }
+
+.vuong.v2 {
+  background: #644a94; }
+
+.wrap2 {
+  margin: auto;
+  padding: 20px; }
+
+@media (max-width: 1023px) {
+  .wrap {
+    flex-direction: column; }
+
+  .row1 {
+    flex-direction: row; } }
+@media (max-width: 600px) {
+  .wrap {
+    width: 100%; }
+
+  .row1 {
+    flex-direction: column; } }
+/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=style.css.map */
+
+/*# sourceMappingURL=style.css.map */
